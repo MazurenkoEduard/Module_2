@@ -1,7 +1,9 @@
 package main;
 
 import task1.Task1;
+import task2.Task2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -11,6 +13,13 @@ public class Main {
         System.out.println("Task1");
         System.out.println("Input: " + dates);
         System.out.println("Output: " + task1.datesToStringFormat(dates));
+        System.out.println();
+
+        Task2 task2 = new Task2();
+        List<String> names = new ArrayList<>(List.of("Oleg", "Ivan", "Oleg", "Anton"));
+        System.out.println("Task2");
+        System.out.println("Input: " + names);
+        System.out.println("Output: " + task2.findFirstUniqueName(names));
         System.out.println();
     }
 }
